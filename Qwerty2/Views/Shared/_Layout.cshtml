@@ -1,0 +1,28 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewBag.Title</title>
+    
+    <link href="~/Content/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
+    @RenderSection("customStyles",false)
+</head>
+<body class="container-fluid">
+    <!-- Navbar -->
+    @Html.Partial("_Navbar")
+    <!-- Navbar -->
+
+    <div class="container">
+    @RenderBody()
+    </div>
+
+    <!-- Footer -->
+    @Html.Partial("_Footer")
+    <!-- Footer -->
+
+    <script src="~/Content/lib/jQuery/jquery-3.4.1.js"></script>
+    <script src="~/Content/lib/bootstrap/js/bootstrap.js"></script>
+    @RenderSection("customScripts", false) <!--Bunun avantajı index sayfasındayken istediğim an @@section section { } tagıyla o alana css ekleyebilirim.-->
+</body>
+</html>
