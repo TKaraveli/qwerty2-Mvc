@@ -13,5 +13,9 @@ namespace Qwerty2.Controllers
         {
             return View();
         }
+
+        public ActionResult About() => View();
+
+        public ActionResult Contact() => View();
     }
 }
