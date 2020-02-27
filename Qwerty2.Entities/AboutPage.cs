@@ -6,7 +6,7 @@ namespace Qwerty2.Entities
 {
     public class AboutPage
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
 
         public string TitleName { get; set; }
 
