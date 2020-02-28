@@ -10,8 +10,6 @@ namespace Qwerty2.Entities
 
         public string FullName { get; set; }
 
-        public string MyProperty { get; set; }
-
         public string EmailAdress { get; set; }
 
         public string PhoneNumber { get; set; }
@@ -19,6 +17,8 @@ namespace Qwerty2.Entities
         public string LinkedInProfile { get; set; }
 
         public string GitHubProfile { get; set; }
+
+        public string TitleName { get; set; }
 
     }
 }
