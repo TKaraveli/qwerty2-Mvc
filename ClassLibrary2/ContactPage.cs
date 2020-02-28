@@ -20,5 +20,7 @@ namespace Qwerty2.Entities
 
         public string TitleName { get; set; }
 
+        public string ContactPageContent { get; set; }
+
     }
 }

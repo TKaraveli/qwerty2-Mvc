@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Qwerty2.Services;
 
 namespace Qwerty2.Controllers
 {
@@ -14,8 +15,18 @@ namespace Qwerty2.Controllers
             return View();
         }
 
-        public ActionResult About() => View();
+        public ActionResult About()
+        {
+            var aboutPageService = new AboutPageService();
 
-        public ActionResult Contact() => View();
+            var about = aboutPageService.GetAboutPage();
+
+            return View(about);
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }
