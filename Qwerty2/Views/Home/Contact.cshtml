@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ContactPage
+
+@{
     ViewBag.Title = "İletişim sayfası";
 }
 
@@ -6,22 +8,8 @@
 
 
 <div id="lipsum">
-    <h2 class="text-center">Burası Sayfa başlığı.</h2>
-    <p>
-        Etiam vitae neque arcu. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam augue ligula, consectetur at viverra vel, cursus sed est. Ut vel risus feugiat, dictum nulla ut, ullamcorper sapien. Ut a sapien diam. Donec luctus facilisis tristique. Maecenas in blandit leo. Integer elementum ex ac arcu facilisis, ac mattis mi lobortis. Aliquam non nulla facilisis, tincidunt turpis quis, auctor dolor. Nullam non fermentum ipsum. Suspendisse eget convallis purus. Praesent laoreet sem dui, vitae cursus nisl commodo sed. In vel convallis velit. Integer dui nisi, molestie et efficitur eu, rhoncus a dolor. Vivamus tincidunt, dolor non convallis blandit, sapien orci eleifend eros, ut lacinia est risus nec velit.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit risus non sem vulputate, at vestibulum nibh ornare. In hac habitasse platea dictumst. Fusce vel consequat libero. In vestibulum lobortis aliquam. Fusce sollicitudin odio ante, id accumsan quam bibendum eget. Integer sed laoreet lacus. Maecenas vel volutpat mi, ut viverra metus. Praesent eget consequat sapien. Curabitur et odio faucibus urna semper ullamcorper sit amet at odio. Mauris pharetra mauris nec vestibulum elementum. Donec varius ligula eu gravida sollicitudin. Quisque malesuada nec quam at viverra. Nam ullamcorper justo tellus, eu bibendum dolor tempus at. Pellentesque augue ligula, maximus egestas tortor at, maximus sodales tortor. Praesent id magna in ligula consequat pulvinar.
-    </p>
-    <p>
-        Mauris aliquam tempus lorem blandit sagittis. Fusce tempus purus quis dignissim ornare. Pellentesque vulputate ante nec nibh pharetra sollicitudin. Curabitur vehicula, ligula mollis semper lacinia, nisl nisi scelerisque purus, ac iaculis magna sem at ante. Donec viverra vulputate lectus, lacinia posuere nunc elementum et. Donec sit amet arcu vel metus venenatis tristique. Praesent vel justo magna. Praesent eu iaculis elit. Quisque non ex vel dui tempor tristique. Nam feugiat pharetra metus at iaculis. Duis luctus tortor turpis, nec convallis eros placerat eget. Nunc aliquet accumsan velit a tempor. Cras ac ante mauris. Phasellus vel tincidunt est.
-    </p>
-    <p>
-        Nulla efficitur diam odio, id aliquam ex euismod non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum condimentum urna lectus, quis congue nisi feugiat in. Proin at orci consequat, euismod arcu ac, consequat nisi. Sed vulputate velit ut ipsum tristique, eu rutrum est mollis. In vestibulum odio ac mauris tempor, quis venenatis enim consequat. Aliquam erat volutpat. Pellentesque eleifend lacus ante, et ultrices ligula euismod at. Praesent blandit, ex a pharetra accumsan, eros nunc imperdiet eros, nec sollicitudin ex dolor sollicitudin nunc. Pellentesque mattis placerat imperdiet. Aliquam laoreet rhoncus est ut dictum. Fusce pharetra, orci nec egestas dictum, ex ante ultrices lacus, eget sollicitudin libero lacus non nisl. Sed eu aliquam elit. Nullam elit risus, suscipit nec mauris in, fringilla porta libero. Donec tristique aliquam ex quis aliquam. Nunc nec rutrum odio.
-    </p>
-    <p>
-        Donec porta nisl et magna ultrices vestibulum. Mauris ut elit orci. Mauris est lorem, malesuada id congue ac, pharetra ut sapien. Ut pretium tincidunt massa, ut interdum nunc vulputate at. Quisque non consectetur libero, laoreet maximus elit. Aliquam blandit velit dolor, vitae tristique est tempor hendrerit. Aliquam tempor odio eu justo commodo, ac tristique orci imperdiet. Fusce eu ipsum non elit elementum luctus eu volutpat sem. Maecenas ligula odio, efficitur at iaculis ut, fringilla in ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vitae ornare magna. Fusce pretium dignissim elit vel laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce vitae dolor ligula. Donec vel sagittis ante, ut porta velit. Quisque sit amet varius nibh.
-    </p>
+    <h2 class="text-center">@Model.TitleName.</h2>
+     @Html.Raw(@Model.ContactPageContent)
 </div>
 
 <div id="generated">
@@ -29,3 +17,7 @@
     <a href="https://tr.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a> üretilmiştir
 </div>
 <hr />
+Adı : @Model.FullName
+
+<br/>
+Email : @Model.EmailAdress

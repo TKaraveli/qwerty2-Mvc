@@ -11,6 +11,7 @@ namespace Qwerty2.Services
 {
     public class AboutPageService
     {
+        #region KESİNLİKLE YAPMA!! - DAL IN VAROLUŞ SEBEBİNE AYKIRI!!
         //private ProjectContext database;
 
         //public AboutPageServices()
@@ -24,6 +25,7 @@ namespace Qwerty2.Services
 
         //    return aboutPage;
         //}
+        #endregion
 
         private AboutPageRepository _aboutRepository;
 
